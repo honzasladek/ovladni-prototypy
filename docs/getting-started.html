@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8">
+    <title>Bootstrap Tiles - Ovládní Front-end</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/css/docs.css" rel="stylesheet">
+    <link href="assets/css/ovladni-frontend.css" rel="stylesheet">
+    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+  </head>
+
+  <body data-spy="scroll" data-target=".bs-docs-sidebar">
+
+    <!-- Navbar
+    ================================================== -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="./index.html">Bootstrap</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="">
+                <a href="./index.html">Home</a>
+              </li>
+              <li class="active">
+                <a href="./getting-started.html">Bootstrap Tiles</a>
+              </li>
+              <li class="">
+                <a href="./scaffolding.html">Scaffolding</a>
+              </li>
+              <li class="">
+                <a href="./base-css.html">Base CSS</a>
+              </li>
+              <li class="">
+                <a href="./components.html">Components</a>
+              </li>
+              <li class="">
+                <a href="./javascript.html">JavaScript</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- Subhead
+================================================== -->
+<header class="jumbotron subhead" id="overview">
+  <div class="container">
+    <h1>Bootstrap tiles</h1>
+    <p class="lead">Kusy kódu pro rychlé prototypování na školení Ovládni Front-end</p>
+  </div>
+</header>
+
+
+  <div class="container">
+
+    <!-- Docs nav
+    ================================================== -->
+    <div class="row">
+      <div class="span3 bs-docs-sidebar">
+        <ul class="nav nav-list bs-docs-sidenav">
+          <li><a href="#nav-topnavbar"><i class="icon-chevron-right"></i> Navigační lišta</a></li>
+          <li><a href="#nav-offcanvas"><i class="icon-chevron-right"></i> Navigace off-canvas</a></li>
+          <li><a href="#jeden-produkt"><i class="icon-chevron-right"></i> Produkty</a></li>
+          <li><a href="#seznam-vyhod"><i class="icon-chevron-right"></i> Seznam výhod</a></li>
+          <li><a href="#hlavicka"><i class="icon-chevron-right"></i> Hlavička</a></li>
+        </ul>
+      </div>
+      <div class="span9">
+
+
+        <!-- Navbar
+        ================================================== -->
+        <section id="nav-topnavbar">
+          <div class="page-header">
+            <h1>Responzivní navigační lišta</h1>
+          </div>
+          <p class="lead">Responzivní navigační lišta, která se na malých zařízeních zobrazuje po kliknutí na ikonku.</p>
+        </section>
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div class="container">
+              <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="brand" href="#">Ovládni Front-end</a>
+              <div class="nav-collapse collapse">
+                <ul class="nav">
+                  <li class="">
+                    <a href="#">Strana jedna</a>
+                  </li>
+                  <li class="">
+                    <a href="#">Strana dvě</a>
+                  </li>
+                  <li class="">
+                    <a href="#">Strana tři</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+<pre class="prettyprint linenums">
+&lt;div class=&quot;navbar&quot;&gt;
+  &lt;div class=&quot;navbar-inner&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+      &lt;button type=&quot;button&quot; class=&quot;btn btn-navbar&quot; data-toggle=&quot;collapse&quot; data-target=&quot;.nav-collapse&quot;&gt;
+        &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+      &lt;/button&gt;
+      &lt;a class=&quot;brand&quot; href=&quot;#&quot;&gt;Ovl&aacute;dni Front-end&lt;/a&gt;
+      &lt;div class=&quot;nav-collapse collapse&quot;&gt;
+        &lt;ul class=&quot;nav&quot;&gt;
+          &lt;li class=&quot;&quot;&gt;
+            &lt;a href=&quot;#&quot;&gt;Strana jedna&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class=&quot;&quot;&gt;
+            &lt;a href=&quot;#&quot;&gt;Strana dv&#x11b;&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class=&quot;&quot;&gt;
+            &lt;a href=&quot;#&quot;&gt;Strana t&#x159;i&lt;/a&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+
+        <!-- Download
+        ================================================== -->
+        <section id="nav-offcanvas">
+          <div class="page-header">
+            <h1>Navigace off-canvas</h1>
+          </div>
+          <p class="lead">Responzivní navigace na levé straně, která na malých obrazovkách zmizí a přijíždí z prostoru mimo obrazovku.</p>
+
+            <div id="wrap" class="row-fluid wrap">
+              <!-- Obsah navigace -->
+              <aside class="well span3 oc" id="side-menu" role="navigation">
+                <ul class="nav nav-list">
+                  <li><a href="#">Odkaz jedna</a></li>
+                  <li><a href="#">Odkaz dva</a></li>
+                  <li><a href="#">Odkaz tři</a></li>
+                </ul>
+              </aside>
+
+              <!-- Obsah webu vpravo -->
+              <section class="well span9">
+                <!-- Tlacitko, ktere se zobrazuje pouze na malych displejich -->
+                <a href="#menu" class="side-menu-link btn btn-mini">
+                  <i class="icon-th"></i>
+                </a>
+                <h2>Obsah webu</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, sunt qui earum dignissimos debitis saepe culpa blanditiis possimus obcaecati sit. Est, id impedit recusandae quis praesentium deleniti aliquid et eaque.</p>
+              </section>
+
+            </div>
+
+<pre class="prettyprint linenums">
+&lt;div id=&quot;wrap&quot; class=&quot;row-fluid wrap&quot;&gt;
+  &lt;!-- Obsah navigace --&gt;
+  &lt;aside class=&quot;well span3 oc&quot; id=&quot;side-menu&quot; role=&quot;navigation&quot;&gt;
+    &lt;ul class=&quot;nav nav-list&quot;&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Odkaz jedna&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Odkaz dva&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Odkaz t&#x159;i&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/aside&gt;
+
+  &lt;!-- Obsah webu vpravo --&gt;
+  &lt;section class=&quot;well span9&quot;&gt;
+    &lt;!-- Tlacitko, ktere se zobrazuje pouze na malych displejich --&gt;
+    &lt;a href=&quot;#menu&quot; class=&quot;side-menu-link btn btn-mini&quot;&gt;
+      &lt;i class=&quot;icon-th&quot;&gt;&lt;/i&gt;
+    &lt;/a&gt;
+    &lt;h2&gt;Obsah webu&lt;/h2&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, sunt qui earum dignissimos debitis saepe culpa blanditiis possimus obcaecati sit. Est, id impedit recusandae quis praesentium deleniti aliquid et eaque.&lt;/p&gt;
+  &lt;/section&gt;
+
+&lt;/div&gt;
+</pre>
+
+        </section>
+
+
+
+        <!-- File structure
+        ================================================== -->
+        <section id="jeden-produkt">
+          <div class="page-header">
+            <h1>Produkty</h1>
+          </div>
+          <div class="row-fluid">
+            <div class="product">
+              <img src="http://placehold.it/400x300" width="400" height="300"><br />
+                <h3><a href="#">Webhouskové degustační menu</a></h3>
+                <p><b>Cena:</b> 490 Kč</p>
+                <p><a href="#" class="btn btn-large btn-primary">koupit</a></p>
+            </div>
+            <div class="product">
+              <img src="http://placehold.it/400x300" width="400" height="300"><br />
+                <h3><a href="#">SEO Redbull</a></h3>
+                <p><b>Cena:</b> 490 Kč</p>
+                <p><a href="#" class="btn btn-large btn-primary">koupit</a></p>
+            </div>
+            <div class="product">
+              <img src="http://placehold.it/400x300" width="400" height="300"><br />
+                <h3><a href="#">Bezpečnost +100</a></h3>
+                <p><b>Cena:</b> 490 Kč</p>
+                <p><a href="#" class="btn btn-large btn-primary">koupit</a></p>
+            </div>
+          </div>
+<pre class="prettyprint linenums">
+&lt;div class=&quot;product&quot;&gt;
+  &lt;img src=&quot;http://placehold.it/400x300&quot; width=&quot;400&quot; height=&quot;300&quot;&gt;&lt;br /&gt;
+    &lt;h3&gt;&lt;a href=&quot;#&quot;&gt;Webhouskov&eacute; degusta&#x10d;n&iacute; menu&lt;/a&gt;&lt;/h3&gt;
+    &lt;p&gt;&lt;b&gt;Cena:&lt;/b&gt; 490 K&#x10d;&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;btn btn-large btn-primary&quot;&gt;koupit&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+</pre>
+        </section>
+
+
+
+        <!-- Contents
+        ================================================== -->
+        <section id="seznam-vyhod">
+          <div class="page-header">
+            <h1>Seznam výhod</h1>
+          </div>
+          <p class="lead">Jaké výhody má náš skvělý eshop</p>
+
+          <div class="row-fluid">
+            <ul class="why">
+              <li>Netrávíte cenný čas na kávě s „odborníky”. Váš web vylepšíme rychle a na dálku.
+              <li>Záruka vrácení ceny. (Pokud o něj požádáte telegramem.)
+              <li>Na rozdíl od výsledků garantujeme, že obdržíte tištěný certifikát v dřevěném rámečku.
+            </ul>
+          </div>
+
+<pre class="prettyprint linenums">
+&lt;ul class=&quot;why&quot;&gt;
+  &lt;li&gt;Netr&aacute;v&iacute;te cenn&yacute; &#x10d;as na k&aacute;v&#x11b; s &bdquo;odborn&iacute;ky&rdquo;. V&aacute;&scaron; web vylep&scaron;&iacute;me rychle a na d&aacute;lku.
+  &lt;li&gt;Z&aacute;ruka vr&aacute;cen&iacute; ceny. (Pokud o n&#x11b;j po&#x17e;&aacute;d&aacute;te telegramem.)
+  &lt;li&gt;Na rozd&iacute;l od v&yacute;sledk&#x16f; garantujeme, &#x17e;e obdr&#x17e;&iacute;te ti&scaron;t&#x11b;n&yacute; certifik&aacute;t v d&#x159;ev&#x11b;n&eacute;m r&aacute;me&#x10d;ku.
+&lt;/ul&gt;
+</pre>
+
+        </section>
+
+         <!-- Contents
+        ================================================== -->
+        <section id="hlavicka">
+          <div class="page-header">
+            <h1>Hlavička</h1>
+          </div>
+          <p class="lead">Hlavní titulek a podtitulek našeho shopu</p>
+
+          <div class="hero-unit">
+            <p class="logo"><strong>Webhousky</strong></p>
+            <h1>Zlepšení vašeho webu rychle a&nbsp;dostupně.</h1>
+            <p>Snadné jako koupit housku na&nbsp;krámě.</p>
+          </div>
+
+<pre class="prettyprint linenums">
+&lt;div class=&quot;hero-unit&quot;&gt;
+  &lt;p class=&quot;logo&quot;&gt;&lt;strong&gt;Webhousky&lt;/strong&gt;&lt;/p&gt;
+  &lt;h1&gt;Zlep&scaron;en&iacute; va&scaron;eho webu rychle a&amp;nbsp;dostupn&#x11b;.&lt;/h1&gt;
+  &lt;p&gt;Snadn&eacute; jako koupit housku na&amp;nbsp;kr&aacute;m&#x11b;.&lt;/p&gt;
+&lt;/div&gt;
+</pre>
+
+        </section>
+
+</div>
+</div>
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap-transition.js"></script>
+    <script src="assets/js/bootstrap-alert.js"></script>
+    <script src="assets/js/bootstrap-modal.js"></script>
+    <script src="assets/js/bootstrap-dropdown.js"></script>
+    <script src="assets/js/bootstrap-scrollspy.js"></script>
+    <script src="assets/js/bootstrap-tab.js"></script>
+    <script src="assets/js/bootstrap-tooltip.js"></script>
+    <script src="assets/js/bootstrap-popover.js"></script>
+    <script src="assets/js/bootstrap-button.js"></script>
+    <script src="assets/js/bootstrap-collapse.js"></script>
+    <script src="assets/js/bootstrap-carousel.js"></script>
+    <script src="assets/js/bootstrap-typeahead.js"></script>
+    <script src="assets/js/bootstrap-affix.js"></script>
+
+    <script src="assets/js/ovladni-frontend.js"></script>
+
+    <script src="assets/js/holder/holder.js"></script>
+    <script src="assets/js/google-code-prettify/prettify.js"></script>
+
+    <script src="assets/js/application.js"></script>
+
+
+    <!-- Analytics
+    ================================================== -->
+    <script>
+      var _gauges = _gauges || [];
+      (function() {
+        var t   = document.createElement('script');
+        t.type  = 'text/javascript';
+        t.async = true;
+        t.id    = 'gauges-tracker';
+        t.setAttribute('data-site-id', '4f0dc9fef5a1f55508000013');
+        t.src = '//secure.gaug.es/track.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(t, s);
+      })();
+    </script>
+
+  </body>
+</html>
